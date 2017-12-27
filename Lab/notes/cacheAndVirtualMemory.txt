@@ -1,0 +1,69 @@
+32MB	2^25
+16KB	2^14
+8B	2^3
+
+lines of cache = size of cache / size of block = 14 - 3
+n-way index = lines of cache / lines per set = 11 - 3
+
+DM:
+	1. 11b
+	2. 11b
+	3. 3b
+FA:	
+	1. 22b
+	2. 0
+	3. 3b
+8-way:
+	1. 14b
+	2. 8b
+	3. 3b
+
+
+Virtual Memory:
+
+DEF: isolation between processes. 
+	virtual memory may be larger than physical memory size
+	*illusion* of contiguous memory
+
+Division of memory (phys & virtual)
+	Page - blocks of contiguous data in virtual space
+	Frame - Physical memory that holds exactly on page
+
+-Size of page = size of frame
+
+addresses in virtual space are contiguous, but pages are mapped into arbitrary frames.
+
+Converting virtual to physical address handled entirely by Memory Management Unit (MMU)
+	Process is called "translation"
+
+Frame and page will have same offset for specific data
+Page table maps virtual address to physical address
+	stored in RAM
+
+
+TLB - Translation Lookaside Buffer
+	Stores recently used page table entries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

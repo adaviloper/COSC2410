@@ -1,0 +1,17 @@
+Datapaths
+	does all actual data processing
+	- instruction set = programmer's interface to CPU
+	- control unit commands data path
+
+	- Memory, Register block, process counter
+	
+
+Register Array:
+	RS-5		\
+	RT-5		\	-ReadDataA - 32
+	RD-5		\	-ReadDataB - 32
+	WriteData-32	\	
+
+Data Memory
+	32-Address	\	-ReadData - 32
+	32-WriteData
